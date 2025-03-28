@@ -1,11 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Gustavo's personal website" />
+    <meta name="keywords" content="Gustavo, Software Developer, IT Student" />
+    <meta name="author" content="Gustavo Caldas de Souza" />
+    <meta name="theme-color" content="#4CAF50" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <title>Gustavo - Personal Website</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="slideshow.js" defer></script>
   </head>
   <body>
     <nav>
@@ -14,6 +20,25 @@
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
     </nav>
+
+    <section id="slideshow">
+      <div class="slideshow-container">
+        <div class="slide fade">
+          <img src="images/image1.jpg" alt="SaoPaulo 1" />
+        </div>
+        <div class="slide fade">
+          <img src="images/image2.jpg" alt="SaoPaulo 2" />
+        </div>
+        <div class="slide fade">
+          <img src="images/image3.jpg" alt="SaoPaulo 3" />
+        </div>
+      </div>
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
 
     <section id="hero">
       <h1>Gustavo Caldas de Souza</h1>
