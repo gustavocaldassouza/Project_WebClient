@@ -21,24 +21,35 @@
       <a href="contact.html">Contact</a>
     </nav>
 
-    <section id="slideshow">
-      <div class="slideshow-container">
-        <div class="slide fade">
-          <img src="images/image1.jpg" alt="SaoPaulo 1" />
-        </div>
-        <div class="slide fade">
-          <img src="images/image2.jpg" alt="SaoPaulo 2" />
-        </div>
-        <div class="slide fade">
-          <img src="images/image3.jpg" alt="SaoPaulo 3" />
-        </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="/images/image1.jpg" style="width: 100%" />
+        <div class="text">Altino Arantes Building</div>
       </div>
-      <div class="dots">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="/images/image2.jpg" style="width: 100%" />
+        <div class="text">TV Globo antenna</div>
       </div>
-    </section>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="/images/image3.jpg" style="width: 100%" />
+        <div class="text">Vila Olímpia</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div class="dots-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 
     <section id="hero">
       <h1>Gustavo Caldas de Souza</h1>
